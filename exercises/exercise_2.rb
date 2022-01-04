@@ -6,20 +6,14 @@ puts "----------"
 
 # Your code goes here ...
 
-class Store
+@store1 = Store.find_by(id: 1)
 
-  def initialize(store1)
-  @store1 = store1
-
-  end
-end
+@store2 = Store.find_by(id: 2)
 
 
-store1 = Store.find_by(name: 'Burnaby')
-store1.update(name: 'Toronto')
+
+@store1.update(name: 'Toronto')
 
 
-# person = Person.new("Ada")
-# p person
 
 # https://api.rubyonrails.org/classes/ActiveRecord/Schema.html

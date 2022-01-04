@@ -48,6 +48,7 @@ store = Store.new
   store.womens_apparel = false
 
 store.save
-# stores.calculate(:count, :all)
 
+# store.calculate(:count, :all)
 
+puts Store.count
